@@ -1,10 +1,10 @@
 name: "Checkout Testing"
-description: "Testing the checkout function of github action"
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      -uses: actions/checkout@v2
-      -uses: actions/setup-node@v1
-      -run: npm install -g bats
-      -run: bats -v
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: npm install -g bats
+      - run: bats -v
