@@ -18,8 +18,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      
+          
       - name: Testing this
-        run: |
-          echo is this working?
-          echo let's try it.
+        run: echo is this working?
